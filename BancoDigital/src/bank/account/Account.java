@@ -1,23 +1,23 @@
 package bank.account;
 
 public abstract class Account {
-    protected double saldo;
+    protected double balance;
 
-    public Conta(double saldo) {
-        this.saldo = saldo;
+    public Account(double balance) {
+        this.balance = balance;
     }
 
     public double getSaldo() {
-        return saldo;
+        return balance;
     }
 
     public void depositar(double quantia) {
-        saldo += quantia;
+        balance += quantia;
     }
 
     public void sacar(double quantia) {
-        if(quantia <= saldo) {
-            saldo -= quantia;
+        if (quantia <= balance) {
+            balance -= quantia;
         } else {
             System.out.println("Fundos insuficientes");
         }
