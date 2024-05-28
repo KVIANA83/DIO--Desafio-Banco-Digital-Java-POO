@@ -13,12 +13,9 @@ public class Main {
         Account checkingAccount = new CheckingAccount(1000);
         Account savingsAccount = new SavingsAccount(2000);
         
-        client.addAccount(checkingAccount);
-        client.addAccount(savingsAccount);
+        client.adicionarConta(checkingAccount);
+        client.adicionarConta(savingsAccount);
 
-        checkingAccount.deposit(500);
-        savingsAccount.withdraw(300);
+        checkingAccount.depositar(500);
+        savingsAccount.sacar(300);
 
-        client.printAccounts();
-    }
-}
