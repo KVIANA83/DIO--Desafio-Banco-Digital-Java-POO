@@ -8,7 +8,7 @@ import bank.client.Client;
 public class Main {
 
     public static void main(String[] args) {
-        Client client = new Client("John Doe");
+        Client client = new Client("Karine Caldas");
         
         Account checkingAccount = new CheckingAccount(1000);
         Account savingsAccount = new SavingsAccount(2000);
